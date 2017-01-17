@@ -1,0 +1,21 @@
+body {
+    background: #ECEFF1;
+}
+
+.page-content {
+    margin: 5%;
+}
+
+#bottom-right-button {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
+
+.mdl-list__item {
+    background: #FFFFFF;
+}
