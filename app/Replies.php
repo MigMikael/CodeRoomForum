@@ -16,7 +16,7 @@ class Replies extends Model
 
     public function topic()
     {
-        return $this->belongsTo('App\Topics');
+        return $this->belongsTo('App\Topics', 'topic_id');
     }
 
     public function user()

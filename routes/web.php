@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 Route::resource('/forum', 'ForumController');
 Route::resource('/discussion', 'DiscussionController');
+Route::resource('/topic', 'TopicController');
+Route::resource('/reply', 'ReplyController');
+
+Route::get('/topic/create/{discussion_id}', 'TopicController@create2');

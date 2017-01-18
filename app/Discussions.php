@@ -19,6 +19,6 @@ class Discussions extends Model
     }
 
     public function topics(){
-        return $this->hasMany('App\Topics');
+        return $this->hasMany('App\Topics' , 'discussion_id');
     }
 }

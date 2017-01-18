@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class DiscussionController extends Controller
 {
+    public function show($id)
+    {
+        $discussion = Discussions::findOrFail($id);
+
+        return view('discussion.show', ['discussion' => $discussion]);
+    }
+
     public function create()
     {
         return view('discussion.create');

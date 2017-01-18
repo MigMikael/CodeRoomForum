@@ -16,12 +16,12 @@ class Topics extends Model
     ];
 
     public function discussion(){
-        return $this->belongsTo('App\Discussions');
+        return $this->belongsTo('App\Discussions', 'discussion_id');
     }
 
     public function replies()
     {
-        return $this->hasMany('App\Replies');
+        return $this->hasMany('App\Replies', 'topic_id');
     }
 
     public function user()
